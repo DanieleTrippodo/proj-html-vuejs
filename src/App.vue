@@ -3,6 +3,13 @@ import Jumbotron from './components/Jumbotron.vue'; /* Ricordatevi di importare 
 import MainFooter from './components/MainFooter.vue';
 import AlbumOutNow from './components/AlbumOutNow.vue';
 import SenseTheJazz from './components/SenseTheJazz.vue';
+import AppHeader from './components/AppHeader.vue';
+import NewMusicVideo from './components/NewMusicVideo.vue';
+import JumboCards from './components/JumboCards.vue';
+import Statistics from './components/Statistics.vue';
+import CardContainer from './components/CardContainer.vue';
+import "@fontsource/oswald";
+
 
 export default {
   name: 'App',
@@ -10,9 +17,12 @@ export default {
     AppHeader,
     Jumbotron,
     SenseTheJazz,
-    AppNewMusic,
+    NewMusicVideo,
     AlbumOutNow,
-    MainFooter
+    MainFooter,
+    JumboCards,
+    Statistics,
+    CardContainer
   }
 };
 </script>
