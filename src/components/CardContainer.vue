@@ -22,9 +22,9 @@ export default{
     <h3>SENSE THE JAZZ</h3>    </span>
     
     
-             <div class="card-container">
-               <Cards/>
-             </div>
+            <div class="card-container">
+              <Cards/>
+            </div>
 
 
 
@@ -34,7 +34,7 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss" scoped>
   .card-container{
 
     display: flex;

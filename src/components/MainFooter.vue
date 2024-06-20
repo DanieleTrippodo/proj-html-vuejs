@@ -95,7 +95,7 @@ export default {
 
 
 <!-- Qui va lo stile CSS di questo elemento (CSS) -->
-<style scoped>
+<style lang="scss" scoped>
 .footer {
   background-color: #000;
   color: #fff;
