@@ -8,6 +8,7 @@ import NewMusicVideo from './components/NewMusicVideo.vue';
 import Statistics from './components/Statistics.vue';
 import CardContainer from './components/CardContainer.vue';
 import BottomSlider from './components/BottomSlider.vue';
+import ImageInstagram from './components/ImageInstagram.vue';
 import "@fontsource/oswald";
 
 
@@ -22,6 +23,7 @@ export default {
     MainFooter,
     Statistics,
     CardContainer,
+    ImageInstagram,
     BottomSlider
   }
 };
@@ -48,6 +50,7 @@ console.log('work organization dev https://www.figma.com/design/Oxc3MyvNepMNJntH
   <AlbumOutNow/>
   <Statistics/>
   <BottomSlider/>
+  <ImageInstagram/>
   <!-- Footer ---------------- -->
   <MainFooter/>
   <!-- Footer ---------------- -->
