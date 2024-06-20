@@ -8,6 +8,7 @@ import NewMusicVideo from './components/NewMusicVideo.vue';
 import JumboCards from './components/JumboCards.vue';
 import Statistics from './components/Statistics.vue';
 import CardContainer from './components/CardContainer.vue';
+import BottomSlider from './components/BottomSlider.vue';
 import "@fontsource/oswald";
 
 
@@ -22,7 +23,8 @@ export default {
     MainFooter,
     JumboCards,
     Statistics,
-    CardContainer
+    CardContainer,
+    BottomSlider
   }
 };
 </script>
