@@ -45,9 +45,9 @@ export default {
   <SenseTheJazz/>
 
   <AppNewMusic/>
-
+  <CardContainer/>
   <AlbumOutNow/>
-
+  <Statistics/>
   <BottomSlider/>
   <!-- Footer ---------------- -->
   <MainFooter/>
