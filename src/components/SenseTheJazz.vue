@@ -1,29 +1,40 @@
 <script>
+import JumboCards from './JumboCards.vue';
 export default {
-  name: 'WhoWeAre',
-  data() {
-    return {
-      
-    };
-  }
+    name: 'WhoWeAre',
+    data() {
+        return {
+
+        };
+    },
+    components:{
+    JumboCards
+    }
 };
 </script>
 
 <template>
-    <div class="sense-the-jazz">
-        <section class="text-sense-the-jazz">
-            <h3>WHO WE ARE</h3>
-            <h1>SENSE THE JAZZ</h1>
-            <p>The Story Of Jazz And Blues Society Is The Story Of Determination, Passion, Idealism, Community, And Of Course, <br>Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts <br>Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently <br>To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, <br>National And International Music Communities.</p>
-            <button type="submit">READ MORE</button>
-        </section>
-    </div>
+    <section class="container">
+        <JumboCards/>
+        <div class="sense-the-jazz">
+            <section class="text-sense-the-jazz">
+                <h3>WHO WE ARE</h3>
+                <h1>SENSE THE JAZZ</h1>
+                <p>The Story Of Jazz And Blues Society Is The Story Of Determination, Passion, Idealism, Community, And Of Course, <br>Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts <br>Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently <br>To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, <br>National And International Music Communities.</p>
+                <button type="submit">READ MORE</button>
+            </section>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
+
+section.container{
+    position: relative;
+}
 .sense-the-jazz{
     background-color: black;
-    padding: 80px 0;
+    padding: 19rem 0 8rem 0;
 }
 h3{
     
