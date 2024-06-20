@@ -55,7 +55,7 @@ export default {
 
 
 <!-- Qui va lo stile CSS di questo elemento (CSS) -->
-<style scoped>
+<style lang="scss" scoped>
 .jumbotron {
   position: relative;
   width: 100%;

@@ -1,7 +1,7 @@
 <script>
 import Cards from '../components/Cards.vue'
 export default{
-    name:'CardContainer',
+
 
     components:{
         Cards
@@ -34,7 +34,7 @@ export default{
 
 </template>
 
-<style>
+<style scoped>
   .card-container{
 
     display: flex;
@@ -42,24 +42,31 @@ export default{
     flex-wrap: wrap;
     width: 80%;
     margin-left: 20rem;
-  
+    
   }
 
   .card-title{
     display: flex;
     
     flex-direction: column;
-    margin-left: 59rem;
+    
+    align-items: center;
+  
+  
+  
+    h3{
+    font-size: 3rem;
   }
-
-  .card-title p{
+   p{
     color: orange;
   }
+}
   .main-card-container{
     background-color: black;
     color: white;
     display: flex;
      flex-direction: column;
     justify-content: center;
+    padding-bottom: 2rem;
   }
 </style>

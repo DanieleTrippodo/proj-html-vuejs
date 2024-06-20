@@ -95,21 +95,24 @@ export default {
 
 
 <!-- Qui va lo stile CSS di questo elemento (CSS) -->
-<style scoped>
+<style lang="scss" scoped>
 .footer {
   background-color: #000;
   color: #fff;
   padding: 40px 0;
+  font-size: 1.4rem;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-bottom: 10rem;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
 }
 .footer-column {
   flex: 1;

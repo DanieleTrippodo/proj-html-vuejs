@@ -29,7 +29,7 @@ export default {
 
 
 <!-- Qui va lo stile CSS di questo elemento (CSS) -->
-<style scoped>
+<style lang="scss" scoped>
 .album-out-now {
     position: relative;
     width: 100%;
