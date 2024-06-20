@@ -47,9 +47,9 @@ console.log('work organization dev https://www.figma.com/design/Oxc3MyvNepMNJntH
   <SenseTheJazz/>
 
   <AppNewMusic/>
-
+  <CardContainer/>
   <AlbumOutNow/>
-
+  <Statistics/>
   <BottomSlider/>
   <!-- Footer ---------------- -->
   <MainFooter/>
