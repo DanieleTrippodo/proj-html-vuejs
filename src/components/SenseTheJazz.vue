@@ -60,6 +60,9 @@ button{
     font-weight: bold;
     margin-top: 1rem;
 }
+button:hover{
+    background-color:#e37f0a;
+}
 .text-sense-the-jazz{
     display: flex;
     flex-direction: column;

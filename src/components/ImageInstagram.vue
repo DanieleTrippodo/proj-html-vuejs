@@ -26,6 +26,11 @@
 <style scoped>
 .group-image{
     display: flex;
+    overflow: hidden;
+    
+}
+.group-image>img:hover{
+    transform: scale(1.1);
 }
 img{
     width: calc(100% / 8);
