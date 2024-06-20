@@ -34,7 +34,7 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss" scoped>
   .card-container{
 
     display: flex;

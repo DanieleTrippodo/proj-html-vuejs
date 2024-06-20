@@ -35,7 +35,8 @@ export default{
   </div>
 </article>
 </template>
-<style>
+
+<style lang="scss" scoped>
  .statitics-container{
    display: flex;
    flex-direction: row;

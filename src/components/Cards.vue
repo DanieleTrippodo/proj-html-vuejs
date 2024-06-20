@@ -57,7 +57,7 @@
                                         </div>
                                         
 </template>
-<style>
+<style lang="scss" scoped>
 .card{
    
     width: 25rem ;
