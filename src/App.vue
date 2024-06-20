@@ -3,6 +3,8 @@ import Jumbotron from './components/Jumbotron.vue' /* Ricordatevi di importare i
 import MainFooter from './components/MainFooter.vue'
 import AlbumOutNow from './components/AlbumOutNow.vue'
 import SenseTheJazz from './components/SenseTheJazz.vue';
+import Cards from './components/Cards.vue';
+import BottomSlider from './components/BottomSlider.vue';
 
 </script>
 
@@ -16,12 +18,14 @@ import SenseTheJazz from './components/SenseTheJazz.vue';
 
   <Jumbotron/>
 
+  <Cards/>
+
   <SenseTheJazz/>
 
 
   <AlbumOutNow/>
 
-
+  <BottomSlider/>
   <!-- Footer ---------------- -->
   <MainFooter/>
   <!-- Footer ---------------- -->

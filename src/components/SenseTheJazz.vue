@@ -20,7 +20,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .sense-the-jazz{
     background-color: black;
     padding: 80px 0;
