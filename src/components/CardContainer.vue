@@ -22,9 +22,9 @@ export default{
     <h3>SENSE THE JAZZ</h3>    </span>
     
     
-             <div class="card-container">
-               <Cards/>
-             </div>
+            <div class="card-container">
+              <Cards/>
+            </div>
 
 
 
