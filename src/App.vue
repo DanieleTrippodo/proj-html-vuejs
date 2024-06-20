@@ -27,6 +27,8 @@ export default {
     BottomSlider
   }
 };
+
+console.log('work organization dev https://www.figma.com/design/Oxc3MyvNepMNJntHDVmfh9/Figma-basics?node-id=1669-162202&t=a50dx6WNCl1FAAyL-1');
 </script>
 
 <template>
