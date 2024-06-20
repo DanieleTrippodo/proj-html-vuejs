@@ -31,6 +31,7 @@
 }
 .group-image>img:hover{
     transform: scale(1.1);
+    transition-duration: 1.3s;
 }
 img{
     width: calc(100% / 8);
