@@ -5,7 +5,6 @@ import AlbumOutNow from './components/AlbumOutNow.vue';
 import SenseTheJazz from './components/SenseTheJazz.vue';
 import AppHeader from './components/AppHeader.vue';
 import NewMusicVideo from './components/NewMusicVideo.vue';
-import JumboCards from './components/JumboCards.vue';
 import Statistics from './components/Statistics.vue';
 import CardContainer from './components/CardContainer.vue';
 import BottomSlider from './components/BottomSlider.vue';
@@ -21,7 +20,6 @@ export default {
     NewMusicVideo,
     AlbumOutNow,
     MainFooter,
-    JumboCards,
     Statistics,
     CardContainer,
     BottomSlider
@@ -42,7 +40,6 @@ console.log('work organization dev https://www.figma.com/design/Oxc3MyvNepMNJntH
 
   <Jumbotron/>
 
-  <JumboCards/>
 
   <SenseTheJazz/>
 

@@ -45,6 +45,9 @@ export default{
         display: flex;
         max-width: 1400px;
         margin: auto;
+        position: absolute;
+        top: -12rem;
+        left: 16rem;
 
         article{
             display: flex;
@@ -59,10 +62,19 @@ export default{
             padding: 5rem 4.5rem;
 
             img{
+                position: relative;
                 width: 106px;
                 height: 106px;
                 filter: invert(100%);
                 margin-bottom: 1.5rem;
+                
+
+                &:hover{
+                    filter: brightness(0) saturate(100%) invert(54%) sepia(95%) saturate(1427%) hue-rotate(357deg) brightness(97%) contrast(95%);
+                    
+                }
+
+                
             }
 
             h2{
@@ -75,6 +87,7 @@ export default{
             }
             div{
                 text-align: center;
+                cursor: pointer;
             }
         }
     }
