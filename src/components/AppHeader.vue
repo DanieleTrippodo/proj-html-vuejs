@@ -80,7 +80,6 @@
     .header-fixed{
         position: fixed;
         top: 0;
-        bottom: 50px;
         width: 100%;
         z-index: 3;
     }
