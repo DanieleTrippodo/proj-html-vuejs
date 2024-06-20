@@ -105,7 +105,7 @@ ReadMore {
   cursor: pointer;
   user-select: none;
 
-  padding-top: .8rem;
+  padding-top: rem;
   padding-bottom: .8rem;
   padding-right: 1rem;
   padding-left: 1rem;

@@ -33,6 +33,6 @@ import BottomSlider from './components/BottomSlider.vue';
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
