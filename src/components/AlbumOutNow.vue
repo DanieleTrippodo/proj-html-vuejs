@@ -42,6 +42,7 @@ export default {
     color: white;
     flex-direction: row;
     align-items: center;
+    background-attachment: fixed;
 }
 
 

@@ -59,7 +59,7 @@ export default {
 .jumbotron {
   position: relative;
   width: 100%;
-  height: 47rem;
+  height: 60rem;
   background-size: cover;
   background-position: center;
   color: white;
@@ -67,20 +67,25 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: background-image 0.5s ease-in-out;
+  transition: background-image 1s ease-in-out;
+  margin-bottom: 4rem;
 }
 .content {
   z-index: 2;
 }
 h1 {
   color: orange;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 p {
   color: white;
-  font-size: 5em;
+  font-size: 8em;
   margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 ReadMore {
   padding: 1rem 3rem;
