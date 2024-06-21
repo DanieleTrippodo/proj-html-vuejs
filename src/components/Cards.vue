@@ -66,7 +66,7 @@ data() {
 <style scoped>
 .card{
    
-    width: 32rem ;
+    width: 30rem ;
     height: 32rem;
 display: flex;
     margin: 1rem;
@@ -94,6 +94,7 @@ overflow: hidden;
 img{
     width: 30rem;
     height: 30rem;
+    
    transition: transform .2s;
     &:hover{
       transform: scale(1.1);
