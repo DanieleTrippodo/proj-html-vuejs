@@ -41,7 +41,6 @@ export default{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 10rem;
    
   }
 
