@@ -41,7 +41,7 @@ export default{
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    margin-left: 20rem;
+    margin-left: 15rem;
     
   }
 
@@ -52,10 +52,10 @@ export default{
     
     align-items: center;
   
-  
+ 
   
     h3{
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
    p{
     color: orange;

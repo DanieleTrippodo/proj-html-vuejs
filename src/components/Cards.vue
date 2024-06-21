@@ -51,9 +51,9 @@ data() {
 <template>
 
                                         <div class="card" v-for="(card, index) in CardImage" :key="index">
-                                            
+                                          <div class="image">
                                                        <img :src=" '../src/assets/img/' + card.image"  :alt="card.title"> 
-                                    
+                                   </div>
                                      <span><h3> {{ card.description }}</h3>
                                            <p> Stream On: <i class="fa-brands fa-spotify  icon"></i> <i class="fa-brands fa-youtube  icon"></i> <i class="fa-solid fa-music icon"></i> <i class="fa-brands fa-soundcloud icon"></i>   <i class="fa-brands fa-safari  icon"></i> </p>
                                         </span> 
@@ -66,36 +66,52 @@ data() {
 <style scoped>
 .card{
    
-    width: 25rem ;
-    height: 25.5rem;
+    width: 28rem ;
+    height: 30rem;
 display: flex;
     margin: 1rem;
     display: flex;
     flex-direction: column;
-   
+  
 
  span{
 
-    margin: 1rem 0 0 5rem;
+    margin: 0.5rem 0 0 4rem;
+    padding-bottom: 1rem;
+   h3{
+    font-size: 1.7rem;
+   }
+   p{
+    color: #cccccc;
+    margin-left: 1.5rem;
+   }
 }
   
+.image{
 
+overflow: hidden;
 
 img{
-    width: 25rem;
-    height: 25rem;
-    
-    
+    width: 27rem;
+    height: 27rem;
+   transition: transform .2s;
+    &:hover{
+      transform: scale(1.1);
+      
+     
+    }
    
-}
+   
+   
+}}
 }
 
 .icon{
-  margin-left:0.5rem;
-   
+  margin-left:0.8rem;
+   color: #ffffff;
   &:hover{
   color:orange;
-  
+
 }
 }
 </style>
