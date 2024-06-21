@@ -66,8 +66,8 @@ data() {
 <style scoped>
 .card{
    
-    width: 28rem ;
-    height: 30rem;
+    width: 30rem ;
+    height: 32rem;
 display: flex;
     margin: 1rem;
     display: flex;
@@ -92,8 +92,9 @@ display: flex;
 overflow: hidden;
 
 img{
-    width: 27rem;
-    height: 27rem;
+    width: 30rem;
+    height: 30rem;
+    
    transition: transform .2s;
     &:hover{
       transform: scale(1.1);
@@ -107,8 +108,9 @@ img{
 }
 
 .icon{
-  margin-left:0.8rem;
+  margin-left:1rem;
    color: #ffffff;
+   font-size: 1.1rem;
   &:hover{
   color:orange;
 

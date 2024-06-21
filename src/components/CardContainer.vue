@@ -40,9 +40,8 @@ export default{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    margin-left: 15rem;
-    
+    align-items: center;
+   
   }
 
   .card-title{
@@ -52,13 +51,15 @@ export default{
     
     align-items: center;
   
- 
+    
   
     h3{
     font-size: 3.7rem;
   }
    p{
     color: orange;
+    font-size: 1.5rem;
+    
   }
 }
   .main-card-container{
@@ -66,7 +67,9 @@ export default{
     color: white;
     display: flex;
      flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2rem;
+    
+   
+     
+    padding: 8rem;
   }
 </style>
