@@ -59,7 +59,7 @@ export default {
 .jumbotron {
   position: relative;
   width: 100%;
-  height: 60rem;
+  height: 58rem;
   background-size: cover;
   background-position: center;
   color: white;
@@ -68,7 +68,8 @@ export default {
   justify-content: center;
   text-align: center;
   transition: background-image 1s ease-in-out;
-  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: .4rem;
 }
 .content {
   z-index: 2;
@@ -76,13 +77,13 @@ export default {
 h1 {
   color: orange;
   margin-bottom: 0;
-  font-size: 2.2em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
 }
 p {
   color: white;
-  font-size: 8em;
+  font-size: 7em;
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -110,16 +111,16 @@ ReadMore {
   cursor: pointer;
   user-select: none;
 
-  padding-top: rem;
+  padding-top: .8rem;
   padding-bottom: .8rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.753);
 }
 .arrow.left {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 .arrow.right {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 </style>
