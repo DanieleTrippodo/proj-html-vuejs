@@ -88,6 +88,7 @@ export default {
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
+    box-shadow: 0px 4px 19px -5px rgba(255,255,255,0.17);
 }
 ul {
     display: flex;
