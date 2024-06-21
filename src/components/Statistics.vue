@@ -33,7 +33,7 @@
    flex-direction: row;
    background-color: rgb(90, 40, 40);
   
-   padding: 4rem;
+   padding: 10rem;
    justify-content: center;
    background-image: url(../assets/img/counter_parallax.jpg);
    background-attachment: fixed;
@@ -50,7 +50,7 @@
     
     height: 10rem;
     width: 14rem;
-    font-size: 2rem;
+    font-size: 3.5rem;
      align-items: center;
     margin: 1rem 0rem 0 12rem;
     
@@ -61,7 +61,7 @@
 
 
     .icon{
-      font-size: 4rem;
+      font-size: 5rem;
       margin-bottom: 1rem;
       &:hover{
         color: orange;
