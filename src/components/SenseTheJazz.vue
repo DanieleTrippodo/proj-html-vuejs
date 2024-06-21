@@ -62,6 +62,7 @@ button{
 }
 button:hover{
     background-color:#e37f0a;
+    
 }
 .text-sense-the-jazz{
     display: flex;
