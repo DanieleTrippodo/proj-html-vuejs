@@ -46,10 +46,38 @@ export default{
                     date: "07 December 2021",
                     text: "Characterised by Its Own Beat Patterns, the Lyrics Feature What is Often Extreme Violence and Talk of Criminal Acts. As a Result, There's Been",
                 },
-            ]
+            ],
+            indexScroll: 0,
+        }
+        
+    },
+    methods:{
+        scrollLeft() {
+            this.indexScroll--;
+            if (this.indexScroll >= 0){
+                this.$refs.scrollable.scrollBy({ left: -478, behavior: 'smooth' });
+                console.log(this.indexScroll)
+            } else{
+                this.$refs.scrollable.scrollBy({ left: 2000, behavior: 'smooth' });
+                this.indexScroll = this.sliderElements.length -2
+                console.log(this.indexScroll)
+            }
+        },
+
+        scrollRight() {
+            this.indexScroll++;
+            if(this.indexScroll < this.sliderElements.length -2){
+                this.$refs.scrollable.scrollBy({ left: 478, behavior: 'smooth' });
+                
+                console.log(this.indexScroll)
+            }
+            else{
+                this.$refs.scrollable.scrollBy({ left: -2000, behavior: 'smooth' });
+                this.indexScroll = 0;
+                console.log(this.indexScroll)
+            }
         }
     },
-    
 }
 </script>
 
@@ -59,9 +87,9 @@ export default{
         <p>music blog</p>
         <h2>best music blog</h2>
     </div>
-    <button class="left"><img src="../assets/img/left-arrow.svg" alt=""></button>
-    <button class="right"><img src="../assets/img/right-arrow.svg" alt=""></button>
-    <div class="slider">
+    <button class="left"><img src="../assets/img/left-arrow.svg" alt="" @click="scrollLeft()"></button>
+    <button class="right"><img src="../assets/img/right-arrow.svg" alt="" @click="scrollRight()"></button>
+    <div class="slider" ref="scrollable">
         <article v-for="(element, index) in sliderElements">
             <div class="cover">
                 <img :src="'../src/assets/img/' + element.img" alt="">
@@ -86,12 +114,16 @@ section{
     padding: 7rem 0;
     position: relative;
 
+    &:hover button{
+        opacity: 1;
+    }
+
     .cover {
 
         overflow: hidden;
         img{
-            transition: transform .5s;
             cursor: pointer;
+            transition: transform .5s;
             &:hover{
                 transform: scale(1.1);
             }
@@ -105,15 +137,17 @@ section{
         background-color: transparent;
         border: none;
         color: white;
+        opacity: 0;
+        cursor: pointer;
+        transition: opacity .5s;
 
         img{
             width: 1rem;
-            cursor: pointer;
         }
     }
 
     button.left{
-        left: -2.5rem;
+        left: -3rem;
     }
 
     button.right{
