@@ -107,8 +107,9 @@ img{
 }
 
 .icon{
-  margin-left:0.8rem;
+  margin-left:1rem;
    color: #ffffff;
+   font-size: 1.1rem;
   &:hover{
   color:orange;
 
