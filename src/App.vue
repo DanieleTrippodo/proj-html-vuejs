@@ -44,7 +44,7 @@ console.log('work organization dev https://www.figma.com/design/Oxc3MyvNepMNJntH
 
 
   <SenseTheJazz/>
-
+  <NewMusicVideo/>
   <AppNewMusic/>
   <CardContainer/>
   <AlbumOutNow/>

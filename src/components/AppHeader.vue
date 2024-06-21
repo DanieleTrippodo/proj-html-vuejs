@@ -72,7 +72,13 @@ export default {
 
 
 
-<style scoped>
+<style lang="scss" scoped>
+
+.container-logo img{
+    padding-left: 1.6rem;
+    width: 12rem;
+}
+
 .header-container {
     background-color: black;
     height: 100px;
@@ -82,6 +88,7 @@ export default {
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
+    box-shadow: 0px 4px 19px -5px rgba(255,255,255,0.17);
 }
 ul {
     display: flex;
@@ -92,16 +99,16 @@ ul {
 }
 li {
     list-style: none;
-    font-size: 20px;
-    font-weight: 550;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
 }
 li:hover {
-    color: orange;
+    color: #f2870c;
 }
 li.active {
-    color: orange;
+    color: #f2870c;
 }
 .img-search {
     filter: brightness(0) invert(1);       
@@ -141,6 +148,6 @@ li.active {
     border-bottom: none; 
 }
 .dropdown-item:hover {
-    color: orange; 
+    color: #f2870c; 
 }
 </style>
