@@ -85,7 +85,7 @@
         z-index: 3;
     }
     .img-hover:hover img{
-        filter: invert(55%) sepia(100%) saturate(1000%) hue-rotate(-20deg);
+        filter: brightness(0) saturate(100%) invert(54%) sepia(95%) saturate(1427%) hue-rotate(357deg) brightness(97%) contrast(95%);
     }
     
 
