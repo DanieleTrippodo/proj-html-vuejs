@@ -21,7 +21,9 @@ export default {
     <div class="content">
       <h2 class="genre">{{ genre }}</h2>
       <h1 class="title">{{ title }}</h1>
+      <div>
       <ReadMore> Read More </ReadMore>
+      </div>
     </div>
   </div>
 </template>
@@ -55,16 +57,20 @@ export default {
 .content {
   position: relative;
   z-index: 2;
-  padding: 4rem;
+  padding: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .genre {
-  color: orange;
-  font-size: 1.7em;
+  color: #f2870c;
+  font-size: 1.5em;
   margin: 0;
+  font-family: "open-sans", sans-serif;
 }
 .title {
-  font-size: 4.7em;
-  margin: 0.5em 0;
+  font-size: 7em;
+  margin-bottom: 3rem;
 }
 .description {
   font-size: 4.7rem;
@@ -72,11 +78,13 @@ export default {
 }
 
 ReadMore {
-  padding: .9rem 2rem;
+  padding: .9rem 3.5rem;
   background-color: none;
-  border: 1px solid orange;
+  border: 1px solid #f2870c;
   color: white;
-  font-size: 1.3em;
+  font-size: 1em;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 </style>
