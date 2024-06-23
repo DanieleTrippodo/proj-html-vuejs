@@ -10,14 +10,14 @@ export default {
 
 <template>
 
-        <div class="container-music-video" @click="openLink">>
+        <div class="container-music-video" @click="openLink">
             <div class="container-content-music-video">
                 <div class="container-play">
                     <i class="icon-container">
                         &#9654; 
                     </i>
                 </div>
-       
+
                 <p>
                     NEW MUSIC VIDEO
                 </p>
@@ -25,7 +25,7 @@ export default {
             
         </div>
     
-  
+
 </template>
 
 <style scoped>
@@ -36,7 +36,7 @@ export default {
         background-image: url(../assets/img/Video-1024x361.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 680px;
         
     }
     .container-content-music-video{
@@ -47,8 +47,9 @@ export default {
         color: white;
     }
     p{
-        font-size: 75px;
-        font-weight: 550;
+        margin-top: 1.5rem;
+        font-size: 65px;
+        font-weight: 700;
     }
     img{
         height: 50px;
@@ -61,13 +62,16 @@ export default {
         border-radius: 50%;
         height: 90px;
         width: 90px;
-        border: 4px solid orange;
+        border: 4px solid;
+        color: #f2870cd7;
+        cursor: pointer;
+        &:hover {
+            color: #f2870c;
+        }
     }
     i{
-        color: orange;
         font-size: 25px;
         font-style: normal;
-        padding-top: .4rem;
         padding-left: .3rem;
     }
 

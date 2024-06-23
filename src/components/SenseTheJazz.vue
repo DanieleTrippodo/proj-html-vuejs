@@ -39,13 +39,17 @@ section.container{
 h3{
     
     color: #e37f0a;
-    font-size: 1.3em;
+    font-size: 1em;
+    font-family: "opens-sans", sans-serif;
+    font-weight: 600;
 }
 p{
-    color: #cccccc;
+    color: #b6b6b6;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: "open-sans", sans-serif;
+    line-height: 2rem;
 }
 h1{
     font-size: 4em;
@@ -59,6 +63,7 @@ button{
     height: 50px;
     font-weight: bold;
     margin-top: 1rem;
+    cursor: pointer;
 }
 button:hover{
     background-color:#e37f0a;

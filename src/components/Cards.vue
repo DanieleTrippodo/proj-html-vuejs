@@ -50,70 +50,66 @@ data() {
 
 <template>
 
-                                        <div class="card" v-for="(card, index) in CardImage" :key="index">
-                                          <div class="image">
-                                                       <img :src=" '../src/assets/img/' + card.image"  :alt="card.title"> 
-                                   </div>
-                                     <span><h3> {{ card.description }}</h3>
-                                           <p> Stream On: <i class="fa-brands fa-spotify  icon"></i> <i class="fa-brands fa-youtube  icon"></i> <i class="fa-solid fa-music icon"></i> <i class="fa-brands fa-soundcloud icon"></i>   <i class="fa-brands fa-safari  icon"></i> </p>
-                                        </span> 
+  <div class="card" v-for="(card, index) in CardImage" :key="index">
+    <div class="image">
+    <img :src=" '../src/assets/img/' + card.image"  :alt="card.title"> 
+  </div>
+    <span><h3> {{ card.description }}</h3>
+      <p> Stream On : <i class="fa-brands fa-spotify  icon"></i> <i class="fa-brands fa-youtube  icon"></i> <i class="fa-solid fa-music icon"></i> <i class="fa-brands fa-soundcloud icon"></i>   <i class="fa-brands fa-safari  icon"></i> </p>
+    </span> 
+  </div>
 
-                                       
-                                        </div>
-                                  
-                                        
 </template>
 <style scoped>
 .card{
-   
     width: 30rem ;
     height: 32rem;
-display: flex;
+    display: flex;
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
   
 
- span{
+  span{
 
-    margin: 0.5rem 0 0 4rem;
-    padding-bottom: 1rem;
-   h3{
-    font-size: 1.7rem;
-   }
-   p{
-    color: #cccccc;
-    margin-left: 1.5rem;
-   }
-}
-  
-.image{
+      margin: 0.5rem 0 0;
+      padding-bottom: 1rem;
 
-overflow: hidden;
+      h3{
+      font-size: 1.7rem;
+      }
 
-img{
-    width: 30rem;
-    height: 30rem;
-    
-   transition: transform .2s;
-    &:hover{
-      transform: scale(1.1);
-      
-     
+      p{
+      color: #d8d8d8;
+      margin-left: 1.5rem;
+      font-family: "open-sans", sans-serif;
+      }
+  }
+
+  .image{
+
+  overflow: hidden;
+
+    img{
+        width: 30rem;
+        height: 30rem;
+        
+      transition: transform .2s;
+        &:hover{
+          transform: scale(1.1);
+        }
     }
-   
-   
-   
-}}
+  }
 }
 
 .icon{
   margin-left:1rem;
-   color: #ffffff;
-   font-size: 1.1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  
   &:hover{
   color:orange;
-
-}
+  }
 }
 </style>

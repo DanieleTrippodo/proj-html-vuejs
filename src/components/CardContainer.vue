@@ -22,9 +22,9 @@ export default{
     <h3>SENSE THE JAZZ</h3>    </span>
     
     
-             <div class="card-container">
-               <Cards/>
-             </div>
+    <div class="card-container">
+    <Cards/>
+    </div>
 
 
 
@@ -36,40 +36,33 @@ export default{
 
 <style scoped>
   .card-container{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-   
   }
 
   .card-title{
     display: flex;
-    margin-top: 1.5rem;
     flex-direction: column;
-    
     align-items: center;
-  
-    
   
     h3{
     font-size: 3.7rem;
   }
-   p{
-    color: orange;
-    font-size: 1.5rem;
-    
+  p{
+    color: #f2870c;
+    font-size: 1rem;
+    font-family: "opens-sans", sans-serif;
+    font-weight: 600;
   }
 }
   .main-card-container{
     background-color: black;
     color: white;
     display: flex;
-     flex-direction: column;
-    
-   
-     
+    flex-direction: column;
     padding: 8rem;
   }
 </style>
