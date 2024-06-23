@@ -27,7 +27,15 @@ export default {
     },
     prevSlide() {
       this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    },
+    startSlider: function () {
+      setInterval(() => {
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+      }, 5000); 
     }
+  },
+  mounted(){
+    this.startSlider()
   }
 };
 </script>
@@ -46,8 +54,8 @@ export default {
     </div>
 
     <div class="arrows">
-      <span class="arrow left" @click="prevSlide">&#9664;</span>
-      <span class="arrow right" @click="nextSlide">&#9654;</span>
+      <button class="arrow left" @click="prevSlide"> <img src="../assets/img/left-arrow.svg" alt=""></button>
+      <button class="arrow right" @click="nextSlide"><img src="../assets/img/right-arrow.svg" alt=""></button>
     </div>
   </div>
 </template>
@@ -70,31 +78,37 @@ export default {
   transition: background-image 1s ease-in-out;
   margin-top: 4rem;
   margin-bottom: .4rem;
+  padding-bottom: 11rem;
+
+  &:hover .arrows{
+    display: flex;
+  }
 }
 .content {
   z-index: 2;
 }
 h1 {
-  color: orange;
-  margin-bottom: 0;
-  font-size: 2em;
+  color: #f2870c;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 p {
   color: white;
-  font-size: 7em;
+  font-size: 6em;
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 ReadMore {
-  padding: 1rem 3rem;
+  padding: .7rem 3.5rem;
   background-color: none;
-  border: 1px solid orange;
+  border: 1px solid #f2870c;
   color: white;
-  font-size: 1.3em;
+  font-size: 1em;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .arrows {
@@ -104,23 +118,25 @@ ReadMore {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+  display: none;
 }
 .arrow {
   font-size: 1rem;
   color: white;
   cursor: pointer;
   user-select: none;
+  padding: .8rem 1rem;
+  background-color: rgba(0, 0, 0, 0.397);
+  border: none;
+  margin: 1.5rem;
+  cursor: pointer;
+  img{
+    width: .5rem;
+  }
 
-  padding-top: .8rem;
-  padding-bottom: .8rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  background-color: rgba(0, 0, 0, 0.753);
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.651);
+  }
 }
-.arrow.left {
-  margin-left: 1rem;
-}
-.arrow.right {
-  margin-right: 1rem;
-}
+
 </style>
