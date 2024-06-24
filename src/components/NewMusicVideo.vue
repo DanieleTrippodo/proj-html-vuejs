@@ -2,7 +2,7 @@
 export default {
     methods: {
         openLink() {
-            window.open('https://www.youtube.com/watch?v=lTZLlzLJ68o&t=15s', '_blank');
+            window.open('https://www.youtube.com/watch?v=lTZLlzLJ68o&t=', '_blank');
         }
     }
 };

@@ -44,10 +44,11 @@ export default{
     section{
         display: flex;
         max-width: 1400px;
-        margin: auto;
+        margin: 0 auto;
         position: absolute;
-        top: -12rem;
-        left: 16rem;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
 
         article{
             display: flex;
@@ -56,7 +57,7 @@ export default{
             align-items: center;
             background-color: #121212;
             color: white;
-            width: calc(100% / 3);
+            width: calc(1400px / 3);
             height: 23rem;
             margin: 1rem;
             padding: 5rem 4.5rem;

@@ -56,7 +56,7 @@ section.container{
     overflow-y: scroll;
     scrollbar-width: none;
     div.group-image{
-        min-width: calc(100% / 8);
+        min-width: calc((100% / 8) - .1rem);
         aspect-ratio: 1/1;
         margin: .1rem;
         overflow: hidden;
