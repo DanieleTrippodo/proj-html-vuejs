@@ -15,7 +15,6 @@ export default{
             axios.get("http://152.89.170.170:3000/events/rock")
             .then((response) => {
                 this.store.Events = response.data
-                console.log(response.data)
             })
         },
 

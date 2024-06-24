@@ -1,8 +1,40 @@
 <script>
-   export default {
+    export default {
     data() {
         return {
-           
+            images: [
+                {
+                    img: 'instagram_img1.jpg',
+                },
+                {
+                    img: "instagram_img2.jpg",
+                },
+                {
+                    img: "instagram_img3.jpg",
+                },
+                {
+                    img: "instagram_img4.jpg",
+                },
+                {
+                    img: "instagram_img5.jpg",
+                },
+                {
+                    img: "instagram_img6.jpg",
+                },
+                {
+                    img: "instagram_img7.jpg",
+                },
+                {
+                    img: "instagram_img8.jpg",
+                },
+                {
+                    img: "instagram_img9.jpg",
+                },
+                {
+                    img: "instagram_img10.jpg",
+                }
+
+            ]
         };
     },
     
@@ -10,30 +42,35 @@
 </script>
 
 <template>
-  <div class="group-image">
-    <img src="../assets/img/instagram_img1.jpg" alt="">
-    <img src="../assets/img/instagram_img2.jpg" alt="">
-    <img src="../assets/img/instagram_img3.jpg" alt="">
-    <img src="../assets/img/instagram_img4.jpg" alt="">
-    <img src="../assets/img/instagram_img5.jpg" alt="">
-    <img src="../assets/img/instagram_img6.jpg" alt="">
-    <img src="../assets/img/instagram_img7.jpg" alt="">
-    <img src="../assets/img/instagram_img8.jpg" alt="">
-  </div>
-  
+    <section class="container">
+        <div v-for="(image, index) in images" class="group-image">
+            <img :src=" '../src/assets/img/' + image.img">
+        </div>
+    </section>
 </template>
 
-<style scoped>
-.group-image{
+<style lang="scss" scoped>
+
+section.container{
     display: flex;
-    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    div.group-image{
+        min-width: calc(100% / 8);
+        aspect-ratio: 1/1;
+        margin: .1rem;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            transition: transform .5s;
+            object-fit: cover;
+            cursor: pointer;
     
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
 }
-.group-image>img:hover{
-    transform: scale(1.1);
-    transition-duration: 1.3s;
-}
-img{
-    width: calc(100% / 8);
-}    
 </style>
