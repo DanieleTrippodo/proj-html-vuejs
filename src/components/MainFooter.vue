@@ -28,7 +28,6 @@ export default {
 
 <!-- Qui va il contenuto di questo elemento (HTML) -->
 <template>
-    <hr>
   <footer class="footer">
     <div class="container">
       <div class="row">
